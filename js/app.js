@@ -1,4 +1,5 @@
 /*-------------- Constants -------------*/
+let catogary = ["name","animal","country"]
 
 
 /*---------- Variables (state) ---------*/

@@ -15,30 +15,17 @@
 </head>
 
 <body>
+
     <div id="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Mystery Word</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="stats.html">stats</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <section class="links">
+        <div class="links-child"><a href="index.html">Home</a></div>
+        <div id="right">
+            <div class="links-child"><a href="login.html">login</a></div>
+            <div class="links-child"><a href="stats.html">stats</a></div>
+        </div>
+    </section>
     </div>
+    <h1>Mystery Word</h1>
     <div id="modle">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -55,13 +42,14 @@
                     </div>
                     <div class="modal-body">
                         <p><strong>1. Choose Your Category:</strong><br>
-                            Tap one of the buttons to select your move: name, animal, and country p>
+                            Tap one of the buttons to select your move: name, animal, and country </p>
                         <p><strong>2. Wait for the Guessing:</strong><br>
-                            The computer will randomly pick a guess word./p>
+                            The computer will randomly pick a guess word.</p>
                         <p><strong>3. Check Who Wins:</strong><br>
                             - Choose the letter<br>
                             - If it is correct, go up<br>
-                            - If it is not correct, it is changed to a grey color, the number for guessing is less, and the part of the man is shown. <br>
+                            - If it is not correct, it is changed to a grey color, the number for guessing is less, and
+                            the part of the man is shown. <br>
                             - if the total man is shown, so you lose</p>
                         <p><strong>You can do it✌️</strong></p>
                     </div>
@@ -72,6 +60,75 @@
             </div>
         </div>
     </div>
+    <div id="category">
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+            </button>
+            <ul class="dropdown-menu">
+                <li><button type="button" class="dropdown-item" data-value="name">Name</button></li>
+                <li><button type="button" class="dropdown-item" data-value="animal">Animal</button></li>
+                <li><button type="button" class="dropdown-item" data-value="country">Country</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hangman-container">
+        <div class="gallows">
+            <div class="rope">
+                <pre>
+ _______
+ |     |
+ |     
+ |    
+ |    
+_|_
+</pre>
+
+            </div>
+            <div id="part-head" class="body-part head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle"
+                    viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                </svg>
+            </div>
+            <div id="part-body" class="body-part body">
+                <pre>
+                    |
+                    |
+                </pre>
+            </div>
+            <div id="part-arm-left" class="body-part arm-left">
+                <pre>
+                    /
+                   /
+                </pre>
+            </div>
+            <div id="part-arm-right" class="body-part arm-right">
+                <pre>
+                    \
+                     \
+                </pre>
+            </div>
+            <div id="part-leg-left" class="body-part leg-left">
+                <pre>
+                    \
+                     \
+                </pre>
+            </div>
+            <div id="part-leg-right" class="body-part leg-right">
+                <pre>
+                    /
+                   /
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div id="word-display"></div>
+    <div class="letters" id="letter-buttons"></div>
+
+    <p id="message"></p>
+    <button class="btn btn-primery">New Game</button>
 
 </body>
 

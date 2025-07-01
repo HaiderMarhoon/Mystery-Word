@@ -1,0 +1,23 @@
+.links {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.links-child {
+    background-color: rgb(166, 98, 98);
+    border: 2px solid black;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: auto;
+}
+
+#right {
+display: flex;
+justify-content: center;
+}
