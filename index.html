@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mystery Word </title>
     <link rel="stylesheet" href="/css/style.css">
-    <script defer src="/js/app.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script defer src="/js/app.js"></script>
 </head>
 
 <body>
 
     <div id="header">
         <section class="links">
-        <div class="links-child"><a href="index.html">Home</a></div>
-        <div id="right">
-            <div class="links-child"><a href="login.html">login</a></div>
-            <div class="links-child"><a href="stats.html">stats</a></div>
-        </div>
-    </section>
+            <div class="links-child"><a href="index.html">Home</a></div>
+            <div id="right">
+                <div class="links-child"><a href="login.html">login</a></div>
+                <div class="links-child"><a href="stats.html">stats</a></div>
+            </div>
+        </section>
     </div>
     <h1>Mystery Word</h1>
     <div id="modle">
@@ -60,52 +60,55 @@
             </div>
         </div>
     </div>
-    <div id="category">
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Category
-            </button>
-            <ul class="dropdown-menu">
-                <li><button type="button" class="dropdown-item" id="name">Name</button></li>
-                <li><button type="button" class="dropdown-item" id="animal">Animal</button></li>
-                <li><button type="button" class="dropdown-item" id="country">Country</button></li>
-            </ul>
-        </div>
-    </div>
-    <div class="hangman-container">
-        <div class="gallows">
-            <div class="rope">
-                <img src="/images/1.png" alt="">
-            </div>
-            <div id="part-head" class="body-part head">
-                <img src="/images/2.png" alt="">
-            </div>
-            <div id="part-body" class="body-part body">
-                <img src="/images/3.png" alt="">
-            </div>
-            <div id="part-arm-left" class="body-part arm-left">
-                <img src="/images/5.png" alt="">
-            </div>
-            <div id="part-arm-right" class="body-part arm-right">
-                <img src="/images/6.png" alt="">
-            </div>
-            <div id="part-leg-left" class="body-part leg-left">
-                <img src="/images/7.png" alt="">
-            </div>
-            <div id="part-leg-right" class="body-part leg-right">
-                <img src="/images/8.png" alt="">
+    <section id="game-erea">
+        <div id="category">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Category
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button type="button" class="dropdown-item" id="name">Name</button></li>
+                    <li><button type="button" class="dropdown-item" id="animal">Animal</button></li>
+                    <li><button type="button" class="dropdown-item" id="country">Country</button></li>
+                </ul>
             </div>
         </div>
-        <p id="message"></p>
-        <p id="messageofwrong"></p>
-        <p id="wordDisplay"></p>
-    </div>
-    <div id="word-display"></div>
-    <div class="letters" id="letter-buttons"></div>
+        <div class="hangman-container">
+            <div class="gallows">
+                <div class="rope">
+                    <img id="image1" src="/images/1.png" alt="rope">
+                </div>
+                <div id="part-head" class="body-part head">
+                    <img id="image2" src="/images/2.png" alt="head">
+                </div>
+                <div id="part-body" class="body-part body">
+                    <img id="image3" src="/images/3.png" alt="body">
+                </div>
+                <div id="part-arm-left" class="body-part arm-left">
+                    <img id="image4" src="/images/4.png" alt="arm-left">
+                </div>
+                <div id="part-arm-right" class="body-part arm-right">
+                    <img id="image5" src="/images/5.png" alt="arm-right">
+                </div>
+                <div id="part-leg-left" class="body-part leg-left">
+                    <img id="image6" src="/images/6.png" alt="leg-left">
+                </div>
+                <div id="part-leg-right" class="body-part leg-right">
+                    <img id="image7" src="/images/7.png" alt="leg-right">
+                </div>
+                <div id="finsh" class="body-part all">
+                    <img id="image8" src="/images/8.png" alt="all">
+                </div>
+            </div>
+            <div id="message"></div>
+            <div id="messageofwrong"></div>
+            <div id="wordDisplay"></div>
+        </div>
+        <div id="word-display"></div>
+        <div class="letters" id="letter-buttons"></div>
+    </section>
 
-    <p id="message"></p>
-    
     <button class="btn btn-primery">New Game</button>
 
 </body>
