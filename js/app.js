@@ -1,9 +1,50 @@
 
 /*-------------- Constants -------------*/
 const categories = {
-    name: ["Ali", "Jony", "Sara", "Salman", "James", "Robby"],
-    animal: ["cat", "lion", "Eel", "Zebra", "Mouse", "Oilfish", "Raccoon"],
-    country: ["Angola", "Bahrain", "Burundi", "Comoros", "Finland", "Haiti"]
+    "name": [
+        "Ali", "Jony", "Sara", "Salman", "James", "Robby", "Emily", "David", "Sophia", "Michael", "Olivia", "William",
+        "Ava", "Noah", "Isabella", "Liam", "Mia", "Benjamin", "Charlotte", "Elijah", "Amelia", "Lucas", "Harper", "Mason",
+        "Evelyn", "Logan", "Abigail", "Alexander", "Ella", "Daniel", "Scarlett", "Jackson", "Grace", "Sebastian", "Chloe",
+        "Jack", "Victoria", "Aiden", "Riley", "Owen", "Aria", "Samuel", "Lily", "Matthew", "Zoe", "Joseph", "Nora",
+        "Levi", "Hannah", "Gabriel", "Layla", "Henry", "Brooklyn", "Anthony", "Aurora", "Julian", "Lucy", "Wyatt", "Penelope",
+        "Christopher", "Madison", "Andrew", "Ellie", "Joshua", "Stella", "Dylan", "Natalie", "Isaac", "Maya", "Nathan", "Paisley",
+        "Ryan", "Violet", "Caleb", "Skylar", "Leo", "Audrey", "Jonathan", "Bella", "Adrian", "Willow", "Hunter", "Samantha",
+        "Thomas", "Anna", "Charles", "Elizabeth", "Christian", "Savannah", "Ezra", "Claire", "Aaron", "Kinsley", "Connor", "Eva",
+        "Landon", "Kennedy", "Isaiah", "Genesis", "Cameron", "Aaliyah", "Asher", "Sarah", "Nicholas", "Piper", "Gavin", "Ruby",
+        "Eli", "Nova", "Jordan", "Autumn", "Dominic", "Nevaeh", "Adam", "Alice", "Austin", "Serenity", "Jaxson", "Cora",
+        "Dean", "Eleanor", "Carson", "Hadley", "Ian", "Naomi", "Axel", "Madelyn", "Cooper", "Elena", "Miles", "Delilah",
+        "Jason", "Maria", "Lincoln", "Willow", "Chase", "Melanie", "Cole", "Rose", "Tyler", "Sophie", "Xavier", "Ivy"
+    ],
+    "animal": [
+        "cat", "lion", "Eel", "Zebra", "Mouse", "Oilfish", "Raccoon", "Elephant", "Giraffe", "Penguin", "Kangaroo", "Dolphin",
+        "Cheetah", "Panda", "Tiger", "Wolf", "Bear", "Fox", "Deer", "Rabbit", "Squirrel", "Hedgehog", "Badger", "Otter",
+        "Beaver", "Coyote", "Hyena", "Gorilla", "Chimpanzee", "Orangutan", "Baboon", "Lemur", "Sloth", "Koala", "Platypus",
+        "Echidna", "Wombat", "Tasmanian Devil", "Kookaburra", "Toucan", "Parrot", "Eagle", "Owl", "Hawk", "Falcon", "Vulture",
+        "Flamingo", "Swan", "Duck", "Goose", "Chicken", "Turkey", "Peacock", "Pigeon", "Crow", "Magpie", "Sparrow", "Robin",
+        "Blue Jay", "Woodpecker", "Hummingbird", "Ostrich", "Emu", "Kiwi", "Reptile", "Snake", "Lizard", "Crocodile", "Alligator",
+        "Turtle", "Tortoise", "Frog", "Toad", "Salamander", "Newt", "Fish", "Shark", "Whale", "Octopus", "Squid", "Jellyfish",
+        "Starfish", "Seahorse", "Crab", "Lobster", "Shrimp", "Clam", "Oyster", "Snail", "Slug", "Worm", "Spider", "Scorpion",
+        "Ant", "Bee", "Wasp", "Butterfly", "Moth", "Dragonfly", "Ladybug", "Grasshopper", "Cricket", "Beetle", "Fly", "Mosquito",
+        "Flea", "Tick", "Snailfish", "Blobfish", "Axolotl", "Pangolin", "Okapi", "Narwhal", "Fossa", "Quokka", "Aye-Aye", "Manatee",
+        "Dugong", "Walrus", "Seal", "Sea Lion", "Dolphin", "Porpoise", "Orca", "Beluga", "Narwhal", "Humpback Whale", "Blue Whale"
+    ],
+    "country": [
+        "Angola", "Bahrain", "Burundi", "Comoros", "Finland", "Haiti", "India", "Japan", "Kenya", "Mexico", "Norway", "Peru",
+        "Qatar", "Rwanda", "Afghanistan", "Albania", "Algeria", "Andorra", "Argentina", "Armenia", "Australia", "Austria",
+        "Azerbaijan", "Bangladesh", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina",
+        "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Cabo Verde", "Cambodia", "Cameroon", "Canada",
+        "Central African Republic", "Chad", "Chile", "China", "Colombia", "Congo, Dem. Rep.", "Congo, Rep.", "Costa Rica",
+        "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czechia", "Denmark", "Djibouti", "Dominica", "Dominican Republic",
+        "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "France",
+        "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau",
+        "Guyana", "Honduras", "Hungary", "Iceland", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica",
+        "Jordan", "Kazakhstan", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho",
+        "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives",
+        "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Micronesia", "Moldova", "Monaco", "Mongolia",
+        "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand",
+        "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Oman", "Pakistan", "Palau", "Palestine",
+        "Panama", "Papua New Guinea", "Paraguay", "Philippines", "Poland", "Portugal", "Romania", "Russia", "Saint Kitts and Nevis"
+    ]
 };
 
 /*---------- Variables (state) ---------*/
@@ -43,7 +84,7 @@ const numLose = document.querySelector("#statsLoss")
 const numofgame = document.querySelector("#statsGamesPlayer")
 const pers = document.querySelector("#statpersant")
 const cleanEl = document.querySelector("#cleanState")
-const inputuserEl = document.querySelector("#inputuser")
+const inputuserEl = document.querySelector("#inputUser")
 const inputemailEl = document.querySelector("#inputemail")
 const addEl = document.querySelector("#add")
 const loginForm = document.querySelector("#form form");
@@ -88,8 +129,8 @@ function updateDisplay() {
         messageofEl.textContent = "";
         return;
     }
-    const display = ComputerChoice.split("").map(letter => {
-        return guessedLetters.includes(letter) ? letter : "_"
+    const display = ComputerChoice.split("").map(latter => {
+        return guessedLetters.includes(latter) ? latter : "_"
     }).join(" ");
     wordDisplayEl.textContent = display;
     messageofEl.textContent = `Wrong guesses: ${wrongGuesses} / ${maxGuesses}`;
@@ -133,14 +174,14 @@ function renderAlphabet() {
     }
 }
 
-function guessLatter(letter) {
-    if (guessedLetters.includes(letter) || wrongGuesses >= maxGuesses || !ComputerChoice) {
+function guessLatter(latter) {
+    if (guessedLetters.includes(latter) || wrongGuesses >= maxGuesses || !ComputerChoice) {
         return
     }
 
-    guessedLetters.push(letter);
+    guessedLetters.push(latter);
 
-    if (!ComputerChoice.includes(letter)) {
+    if (!ComputerChoice.includes(latter)) {
         wrongGuesses++;
     }
     updateDisplay();
@@ -342,5 +383,5 @@ if (currentPath.includes('index.html') || currentPath === '/') {
     }
     updateStats();}
 else if (currentPath.includes('login.html')) {
-    if (addEl) addEl.addEventListener('click', initLoginPage)
+    initLoginPage();
 }

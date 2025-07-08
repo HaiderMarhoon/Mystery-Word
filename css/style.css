@@ -1,11 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .bg-body-tertiary {
@@ -15,7 +17,6 @@ body {
 }
 
 #header .navbar {
-  background-color: #e9ecef;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -44,21 +45,25 @@ body {
   padding: auto;
 }
 
-#right {
-  color: aqua;
-  margin-left: 1000px;
-}
-
-
 .navbar-text {
   font-style: italic;
   color: #6c757d;
 }
 
 h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); 
+}
+#usernameDisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
 }
 
 #game-erea {
@@ -83,7 +88,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: large;
 }
 
@@ -129,22 +133,23 @@ h1 {
   display: block;
 }
 
-#message,
+#categorySelect,
+#messageofwrong,
+#message {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    min-height: 25px; 
+}
+
 #messageofwrong {
-  padding: auto;
-  margin: auto;
-  border-radius: 8%;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-  color: #d9534f;
+    color: #dc3545; 
 }
 
 #message {
-  color: #28a745;
+    color: #28a745; 
 }
+
 
 #wordDisplay {
   font-family: 'Courier New', monospace;
@@ -180,7 +185,10 @@ h1 {
 }
 
 #End {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 300px;
   padding: 10px 25px;
   font-size: 1.1em;
   font-weight: bold;
@@ -188,8 +196,40 @@ h1 {
 }
 
 #modle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#modle .btn-primary {
+    background-color: #28a745; 
+    border-color: #28a745;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    border-radius: 50px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+.modal-body strong {
+    color: #007bff; 
+}
+
+#form{
   display: flex;
-  justify-content: start;
-  margin: auto;
-  padding: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #f8f9fa;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 350px;
 }
