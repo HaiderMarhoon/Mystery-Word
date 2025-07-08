@@ -1,6 +1,3 @@
-No problem, I'll create a `README.md` file for your Mystery Word game based on the example you provided.
-
----
 
 # Mystery Word
 
@@ -20,12 +17,12 @@ Players choose a category (Names, Animals, or Countries). The game then randomly
 5.  **New Game:** Click "New Game" to play again.
 
 ### Login and Stats
-* **Login:** Enter your name and email on the **Login** page to personalize your game experience and track your progress.
+* **Login:** Enter your name and email on the **Login** page to personalise your game experience and track your progress.
 * **Stats:** Visit the **Stats** page to view your game history, including games played, wins, losses, and win percentage. You can also clear your stats.
 
 ## 💡 Technologies Used
 * **HTML:** For the game structure and content.
-* **CSS:** For styling the game, making it visually appealing and responsive.
+* **CSS:** For styling the game to make it visually appealing and responsive.
 * **JavaScript:** For game logic, user interaction, and dynamic updates.
 * **Bootstrap 5:** For responsive design components and overall styling.
 
